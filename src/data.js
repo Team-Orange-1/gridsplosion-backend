@@ -1,7 +1,7 @@
 'use strict';
 
 const { response } = require('express');
-const AccountSchema = require('./models/accountModel.js');
+const AccountSchema = require('./../models/accountModel.js');
 const Data = {};
 
 // Sends back the data of one account
