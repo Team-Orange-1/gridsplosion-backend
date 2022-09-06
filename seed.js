@@ -12,21 +12,21 @@ mongoose.connect(process.env.DB_URL);
 async function seed() {
     await Account.create({
         name: 'player 1',
-        highscore: '0:30',
+        highScore: '0:30',
         secretKey: '123'
     });
     console.log('Test account 1 created');
 
     await Account.create({
         name: 'player 2',
-        highscore: '1:00',
+        highScore: '1:00',
         secretKey: '456'
     });
     console.log('Test account 2 created');
 
     await Account.create({
         name: 'player 3',
-        highscore: '1:30',
+        highScore: '1:30',
         secretKey: '789'
     });
     console.log('Test account 3 created');

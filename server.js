@@ -6,15 +6,20 @@ require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const app = express();
-const Data = require('./data');
+const Data = require('./src/data');
 
 // Middleware
 app.use(cors());
 app.use(express.json());
 
 // Mongoose
-const mongoose = required('mongoose');
+const mongoose = require('mongoose');
 mongoose.connect(process.env.DB_URL);
+const db = mongoose.connection;
+db.on('error', console.error.bind(console, 'connection error'));
+db.once('open', function () {
+  console.log('Mongoose is Connected');
+});
 
 // Routes
 app.get('/account', Data.getOneAccount);
@@ -46,4 +51,3 @@ app.get((req, res) => {
 // Server listener
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => console.log(`Server is up and running on port: ${PORT}`));
-
