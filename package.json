@@ -1,0 +1,26 @@
+{
+  "name": "gridsplosion-backend",
+  "version": "1.0.0",
+  "description": "**Author**: [Miguel Rodriguez](https://github.com/m11gz), [David Tusia](https://github.com/dftjr), [Brooke Heck](https://github.com/BrookeHeck)",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Team-Orange-1/gridsplosion-backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Team-Orange-1/gridsplosion-backend/issues"
+  },
+  "homepage": "https://github.com/Team-Orange-1/gridsplosion-backend#readme",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "mongoose": "^6.5.4"
+  }
+}
