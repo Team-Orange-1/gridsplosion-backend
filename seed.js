@@ -13,21 +13,24 @@ async function seed() {
     await Account.create({
         name: 'player 1',
         highScore: '0:30',
-        secretKey: '123'
+        secretKey: '123',
+        email: 'null'
     });
     console.log('Test account 1 created');
 
     await Account.create({
         name: 'player 2',
         highScore: '1:00',
-        secretKey: '456'
+        secretKey: '456',
+        email: 'null'
     });
     console.log('Test account 2 created');
 
     await Account.create({
         name: 'player 3',
         highScore: '1:30',
-        secretKey: '789'
+        secretKey: '789',
+        email: 'null'
     });
     console.log('Test account 3 created');
 
