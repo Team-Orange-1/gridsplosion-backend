@@ -11,6 +11,7 @@ const AccountSchema = new Schema({
     name: { type: 'String', required: true },
     highScore: { type: 'String', required: true },
     secretKey: { type: 'String', required: true },
+    email: { type: 'String', required: true}
 });
 
 // Define the Model

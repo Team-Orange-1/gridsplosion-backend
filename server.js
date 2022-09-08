@@ -7,6 +7,7 @@ const express = require('express');
 const cors = require('cors');
 const app = express();
 const Data = require('./src/data');
+const getDiceRoll = require('./modules/diceRoll');
 
 // Middleware
 app.use(cors());
@@ -27,6 +28,7 @@ app.get('/account', Data.getAllAccounts);
 app.post('/account', Data.createOneAccount);
 app.put('/account/:id', Data.updateOneAccount);
 app.delete('/account/:id', Data.deleteOneAccount);
+app.get('/dice', getDiceRoll);
 
 
 // Testing callbacks
