@@ -23,8 +23,8 @@ db.once('open', function () {
 });
 
 // Routes
-app.get('/account', Data.getOneAccount);
-app.get('/account', Data.getAllAccounts);
+app.get('/account/:id', Data.getOneAccount);
+app.get('/accounts', Data.getAllAccounts);
 app.post('/account', Data.createOneAccount);
 app.put('/account/:id', Data.updateOneAccount);
 app.delete('/account/:id', Data.deleteOneAccount);

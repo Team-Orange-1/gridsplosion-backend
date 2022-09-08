@@ -11,26 +11,20 @@ mongoose.connect(process.env.DB_URL);
 // Function to create test files in database
 async function seed() {
     await Account.create({
-        name: 'player 1',
-        highScore: '0:30',
-        secretKey: '123',
-        email: 'null'
+        highScore: 20,
+        email: 'test1@gmail.com'
     });
     console.log('Test account 1 created');
 
     await Account.create({
-        name: 'player 2',
-        highScore: '1:00',
-        secretKey: '456',
-        email: 'null'
+        highScore: 100,
+        email: 'tester2@yahoo.com'
     });
     console.log('Test account 2 created');
 
     await Account.create({
-        name: 'player 3',
-        highScore: '1:30',
-        secretKey: '789',
-        email: 'null'
+        highScore: 200,
+        email: 'tester3@hello.com'
     });
     console.log('Test account 3 created');
 
