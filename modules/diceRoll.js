@@ -3,7 +3,7 @@ const axios = require('axios');
 function getDiceRoll(request, response, next) {
 
   axios.request({
-    url: 'https://dice-roll.p.rapidapi.com/roll/d/10',
+    url: 'https://dice-roll.p.rapidapi.com/roll/d/25',
     headers: {
       'X-RapidAPI-Key': `${process.env.REACT_APP_DICEROLL_API}`,
       'X-RapidAPI-Host': 'dice-roll.p.rapidapi.com'

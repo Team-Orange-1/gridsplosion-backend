@@ -8,9 +8,7 @@ const { Schema } = mongoose;
 
 // Creates the user accoutn Schema, object structure
 const AccountSchema = new Schema({
-    name: { type: 'String', required: true },
-    highScore: { type: 'String', required: true },
-    secretKey: { type: 'String', required: true },
+    highScore: { type: Number, required: true },
     email: { type: 'String', required: true}
 });
 
